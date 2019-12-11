@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+}
+
+body {
+    /*background: url("img/darbysplace-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;*/
+    background: url("img/darbysplace-background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    overflow: auto;
+
+}
+
+
+
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    line-height: 1.8em;
+    color: dimgrey;
+    min-height: 100%;
+    min-width: 1024px;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+
+
+}
+
+article section {
+    max-width: 90%;
+    position: center;
+    margin: 0 auto;
+}
+
+scrolling_box {
+    display: block;
+    height: 200px;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+
+header {
+    padding-top: 15px;
+    min-height: 80px;
+    border-bottom: 5px color: #ddd;
+   /* box-shadow: 0, 0; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: transparent;
+    
+}
+
+header img {
+    padding: 0;
+    margin: 0;
+    float: left;
+    overflow: hidden;
+}
+
+header a {
+    color: #ddd;
+    margin: 0 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header img {
+    float: left;
+    margin: 0;
+    overflow: hidden;
+}
+
+header nav {
+    display: block;
+    flex: 1;
+    float: right;
+    margin-top: 5px;
+    padding: 1em 0;
+    transform: 300ms all ease;
+}
+
+section-light {
+    background-color: white;
+}
+
+introduction h1 p {
+    /* Full height */
+   position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #000;
+    font-size: 35px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    
+}
+
+.introduction2 {
+ 
+    /* Full height */
+    min-height: 200px;
+        text-align: center;
+
+}
+
+.introduction3 {
+    /* The image used
+    background-image: url("img/dog-park-3.jpeg");*/
+    /* Full height */
+    min-height: 200px;
+}
+
+.introduction4 {
+    /* The image used */
+   
+    /* Full height */
+    min-height: 200px;
+}
+
+.introduction3 img {
+    margin-top: 0 50px;
+    padding: 1em 0
+}
+
+/* Create the parallax scrolling effect */
+.introduction,
+.introduction2,
+.introduction3 .introduction4 {
+    position: relative;
+    opacity: 0.50;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* fixed + parallax
+    scroll = normal */
+    background-attachment: fixed;
+    border-bottom-style: hidden;
+
+}
+
+/*Section class for containers*/
+section {
+    text-align: center;
+    padding: 50px 80px;
+    min-width: 100%;
+    opacity: 0.8
+}
+
+/* What is this again? 
+. {
+  min-height: 365px;
+  min-width: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  opacity: 0.7;
+}
+*/
+
+.section-light {
+    background-color: #f4f4f4;
+    color: dimgrey;
+    min-width: inherit;
+    opacity: 0.6;
+}
+
+.section-light iframe {
+    display: flex;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+    min-width: inherit;
+    opacity: 0.6;
+}
+
+.section-dark h2 {
+    font-size: 40px;
+    border-bottom: none;
+}
+
+.section-dark p {
+    line-height: 2em;
+    display: inline-grid
+}
+
+.section-dark strong {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 35px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 0;
+}
+
+.ptext .border .trans {
+    background-color: transparent;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Deactivate parallax effect for mobile device */
+@media(max-width:568px) {
+
+    .introduction,
+    .introduction2,
+    .introdution3 {
+        background-attachment: fixed;
+    }
+}
