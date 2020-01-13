@@ -1,0 +1,518 @@
+/*
+body {
+    /*
+    background: url("css/img/darbysplace-background.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8em;
+    color: dimgrey;
+
+    background: url("css/img/darbysplace-background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    img.background {
+        left: 50%;
+        margin-left: -512px;
+        /*50%*/
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+  width: 100%;  
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+.content {
+  max-width: 940px;
+  width: 100%;  
+  margin: 0 auto;
+  padding: 50px 2% 50px;
+}
+
+.main_header .row .content {
+    padding: 0;
+}
+
+.dark {
+    background: #333;
+}
+
+/*
+.section-greeting {
+    background-image: url("css/img/darby-intro-image.png");
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    
+}*/
+
+/*
+.main_header {
+  position: fixed;
+  top: 0px;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Oswald", sans-serif;
+}
+
+@media only screen and (max-width: 766px) {
+    .main_header {
+        padding-top: 25px;
+    }*/
+}
+
+.open-nav {
+    max-height: 400px !important;
+}
+
+.open-nav .mobile-toggle {
+    transform: rotate(-90deg);
+}
+
+.sticky {
+    background-color: rgba(255, 255, 255, 0.93);
+    opacity: 1;
+    top: 0px;
+    border-bottom: 1px solid silver;
+}
+
+.logo {
+    width: 50px;
+    font-size: 25px;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    margin-top: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 766px) {
+    .logo {
+        float: none;
+    }
+}
+
+nav {
+    float: right;
+    width: 60%;
+}
+
+@media only screen and (max-width: 766px) {
+    nav {
+        width: 100%;
+    }
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    text-align: right;
+    float: right;
+}
+
+@media only screen and (max-width: 766px) {
+    nav ul {
+        padding-top: 10px;
+        margin-bottom: 22px;
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 766px) {
+    nav ul li {
+        width: 100%;
+        padding: 7px 0;
+        margin: 0;
+    }
+}
+
+nav ul a {
+    color: #888888;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: all 500ms linear;
+}
+
+nav ul a.active {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    transition: all 500ms 100ms linear;
+}
+
+.open-nav {
+    max-height: 400px !important;
+}
+
+.open-nav .mobile-toggle {
+    transform: rotate(-90deg);
+}
+
+.sticky {
+    background-color: rgba(255, 255, 255, 0.93);
+    opacity: 1;
+    top: 0px;
+    border-bottom: 1px solid silver;
+}
+
+.logo {
+    width: 50px;
+    font-size: 25px;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    margin-top: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 766px) {
+    .logo {
+        float: none;
+    }
+}
+
+nav {
+    float: right;
+    width: 60%;
+}
+
+@media only screen and (max-width: 766px) {
+    nav {
+        width: 100%;
+    }
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    text-align: right;
+    float: right;
+}
+
+@media only screen and (max-width: 766px) {
+    nav ul {
+        padding-top: 10px;
+        margin-bottom: 22px;
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 766px) {
+    nav ul li {
+        width: 100%;
+        padding: 7px 0;
+        margin: 0;
+    }
+}
+
+nav ul a {
+    color: #888888;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: all 500ms linear;
+}
+
+nav ul a.active {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    transition: all 500ms 100ms linear;
+}
+
+mobile-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 22px;
+    top: 0;
+    width: 30px;
+    transition: all 200ms ease-in;
+}
+
+@media only screen and (max-width: 766px) {
+    .mobile-toggle {
+        display: block;
+    }
+}
+
+.mobile-toggle span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 1000px;
+    background: #8f8f8f;
+    display: block;
+}
+
+.mouse {
+    display: block;
+    margin: 0 auto;
+    width: 26px;
+    height: 46px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 13px;
+    border: 2px solid #ffffff;
+    position: absolute;
+    bottom: 95px;
+    position: absolute;
+    left: 51%;
+    margin-left: -24px;
+}
+
+.mouse span {
+    display: block;
+    margin: 6px auto;
+    width: 2px;
+    height: 2px;
+    border-radius: 4px;
+    background: #ffffff;
+    border: 1px solid transparent;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.scrollup {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    display: none;
+    bottom: 50px;
+    right: 100px;
+}
+
+/*General styling of the navbar
+.navbar {
+    position: scroll;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px;
+    opacity: 0.7;
+
+}
+
+/*General styling of the navbar.*/
+
+/* Extra features of Navbar
+.navbar * {
+    display: inline;
+}
+
+.navbar li {
+    margin: 20px;
+}
+
+.navbar li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Extra features of Navbar*/
+
+
+.introduction {
+    /* The image used */
+    position: absolute;
+    background-repeat: repeat;
+    /* Full height */
+    min-height: 25%;
+
+}
+
+.introduction2 {
+    /* The image used */
+    background-image: url("css/img/dog-park-2.jpeg");
+    /* Full height */
+    min-height: 400px;
+}
+
+.introduction3 {
+    /* The image used */
+    background-image: url("css/img/dog-park-3.jpeg");
+
+    /* Full height */
+    min-height: 400px;
+}
+
+
+/* Create the parallax scrolling effect */
+.introduction,
+.introduction2,
+.introduction3 {
+    position: relative;
+    opacity: 0.50;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* fixed + parallax
+    scroll = normal */
+    background-attachment: fixed;
+    border-bottom-style: hidden;
+}
+
+/*Section class for containers*/
+.section {
+    text-align: center;
+    padding: 50px 80px;
+    min-width: 100%;
+    opacity: 0.8
+}
+
+. {
+
+    min-height: 365px;
+    min-width: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    opacity: 0.7;
+
+
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: dimgrey;
+    min-width: inherit;
+
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+    min-width: inherit;
+
+}
+
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 35px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.ptext .border {
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 0;
+
+}
+
+.ptext .border .trans {
+    background-color: transparent;
+}
+
+/* Deactivate parallax effect for mobile device */
+
+@media(max-width:568px) {
+
+    .introduction,
+    .introduction2,
+    .introdution3 {
+        background-attachment: fixed;
+    }
+
+    /* Deactivate parallax effect for mobile device */
